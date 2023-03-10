@@ -20,7 +20,7 @@ import (
 
 	"github.com/cloudwego/hertz/pkg/common/hlog"
 	"github.com/sirupsen/logrus"
-	otelhertzlogrus "github.com/stonbirdjx/obs-opentelemetry/logging/logrus"
+	otelhertzlogrus "github.com/stonebirdjx/obs-opentelemetry/logging/logrus"
 	"go.opentelemetry.io/otel"
 	"go.opentelemetry.io/otel/exporters/stdout/stdouttrace"
 	sdktrace "go.opentelemetry.io/otel/sdk/trace"

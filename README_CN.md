@@ -38,8 +38,8 @@
 ```go
 import (
     ...
-    "github.com/stonbirdjx/obs-opentelemetry/provider"
-    "github.com/stonbirdjx/obs-opentelemetry/tracing"
+    "github.com/stonebirdjx/obs-opentelemetry/provider"
+    "github.com/stonebirdjx/obs-opentelemetry/tracing"
 )
 
 
@@ -69,8 +69,8 @@ func main()  {
 ```go
 import (
     ...
-    "github.com/stonbirdjx/obs-opentelemetry/provider"
-    "github.com/stonbirdjx/obs-opentelemetry/tracing"
+    "github.com/stonebirdjx/obs-opentelemetry/provider"
+    "github.com/stonebirdjx/obs-opentelemetry/tracing"
 )
 
 func main(){
@@ -98,7 +98,7 @@ func main(){
 
 ```go
 import (
-    hertzlogrus "github.com/stonbirdjx/obs-opentelemetry/logging/logrus"
+    hertzlogrus "github.com/stonebirdjx/obs-opentelemetry/logging/logrus"
 )
 
 func init()  {

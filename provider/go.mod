@@ -1,4 +1,4 @@
-module github.com/stonbirdjx/obs-opentelemetry/provider
+module github.com/stonebirdjx/obs-opentelemetry/provider
 
 go 1.17
 

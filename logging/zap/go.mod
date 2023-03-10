@@ -1,4 +1,4 @@
-module github.com/stonbirdjx/obs-opentelemetry/logging/zap
+module github.com/stonebirdjx/obs-opentelemetry/logging/zap
 
 go 1.17
 
