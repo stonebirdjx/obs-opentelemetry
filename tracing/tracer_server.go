@@ -26,7 +26,7 @@ import (
 	"github.com/cloudwego/hertz/pkg/common/hlog"
 	"github.com/cloudwego/hertz/pkg/common/tracer"
 	"github.com/cloudwego/hertz/pkg/common/tracer/stats"
-	"github.com/hertz-contrib/obs-opentelemetry/tracing/internal"
+	"github.com/stonebirdjx/obs-opentelemetry/tracing/internal"
 	"go.opentelemetry.io/otel/attribute"
 	"go.opentelemetry.io/otel/codes"
 	"go.opentelemetry.io/otel/metric/instrument"
