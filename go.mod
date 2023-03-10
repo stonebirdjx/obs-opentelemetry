@@ -1,4 +1,4 @@
-module github.com/hertz-contrib/obs-opentelemetry
+module github.com/stonbirdjx/obs-opentelemetry
 
 go 1.17
 

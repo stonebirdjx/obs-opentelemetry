@@ -15,10 +15,10 @@
 package logrus
 
 import (
-	hertzlogrus "github.com/hertz-contrib/logger/logrus"
+	hertzlogrus "github.com/stonbirdjx/logger/logrus"
 )
 
-// Logger an alias to github.com/hertz-contrib/logger/logrus Logger
+// Logger an alias to github.com/stonbirdjx/logger/logrus Logger
 type Logger = hertzlogrus.Logger
 
 // NewLogger create logger with otel hook
