@@ -16,6 +16,7 @@ package tracing
 
 import (
 	"context"
+	"fmt"
 	"time"
 
 	"github.com/cloudwego/hertz/pkg/app"
@@ -27,6 +28,7 @@ import (
 	"github.com/cloudwego/hertz/pkg/common/tracer/stats"
 	"github.com/hertz-contrib/obs-opentelemetry/tracing/internal"
 	"go.opentelemetry.io/otel/attribute"
+	"go.opentelemetry.io/otel/codes"
 	"go.opentelemetry.io/otel/metric/instrument"
 	semconv "go.opentelemetry.io/otel/semconv/v1.10.0"
 	oteltrace "go.opentelemetry.io/otel/trace"
@@ -112,6 +114,11 @@ func (s *serverTracer) Finish(ctx context.Context, c *app.RequestContext) {
 	}
 
 	span.SetAttributes(attrs...)
+
+	if c.Response.StatusCode() > 399 {
+		span.SetStatus(codes.Error, "isn't it normal business status code")
+		span.RecordError(fmt.Errorf("isn't it normal business status code"))
+	}
 
 	injectStatsEventsToSpan(span, st)
 
